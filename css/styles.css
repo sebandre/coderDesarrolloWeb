@@ -1,10 +1,38 @@
+@font-face {
+  font-family: "evanescent";
+  src: url(../fonts/evanescent.ttf);
+}
+
 *{
-	margin: 10;
+	margin: 0;
 	padding: 0;
 }
+
 h1{
-    text-align: center; 
+   text-align: center; 
    color: white;
+   font-size: 50px;
+   font-family: evanescent;
+}
+h1 p{
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+  0%
+  {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(100px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0);
+  }
+
 }
 
 /*---HEADER----*/
@@ -25,26 +53,30 @@ h1{
  }
  
  .headerMenu a:hover {
-   background: #4209df;
+   /*background: #4209df;*/
+   background: rgb(199,100,223);
+   background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
+
  }
  
  body{
     background-color: black;
  }
 
- .index img{
+ .container img{
     display: flex;
     margin: auto;
  }
- .index ul{
+ .container ul{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     list-style: none;
     color: white;
  }
- .index p{
+ .container p{
   display: flex;
+  text-align: center;
   justify-content: center;
   color: white;
  }
@@ -56,7 +88,10 @@ h1{
   flex-flow: row;
   justify-content: center;
   list-style: none;
-  background-color: #4209df;
+  /*background-color: #4209df;*/
+  background: rgb(199,100,223);
+  background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
+
  }
  footer li{
   display: flex;
@@ -101,6 +136,7 @@ h1{
   grid-area: img1;
  }
  .text1{
+  text-align: center;
   align-content: center;
   color: white;
   grid-area: text1;
@@ -113,9 +149,27 @@ h1{
   color: white;
  }
 
- @media screen and (max-width: 770px) {
-    .index{
-      flex-direction: column;
-    }
 
+ @media screen and (max-width: 1024px) {
+    .container{
+      flex-direction: column; 
+      width: 100%;
+
+    }
+    .indexImg{
+      width: 90%;
+      height: 90%;
+    }
  }
+ @media screen and (max-width: 768px) {
+  .container{
+    flex-direction: column; 
+    width: 100%;
+
+  }
+  .indexImg{
+    width: 80%;
+    height: 80%;
+  }
+
+}
