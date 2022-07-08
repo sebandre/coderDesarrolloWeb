@@ -8,13 +8,14 @@
 	padding: 0;
 }
 
-h1{
+.banner{
    text-align: center; 
    color: white;
    font-size: 50px;
    font-family: evanescent;
+   font-weight: 700;
 }
-h1 p{
+.banner p{
   display: inline-block;
   animation: animate 1s linear forwards;
 }
@@ -43,6 +44,9 @@ h1 p{
    list-style: none;
    margin: 0; 
    background: black;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 16px;
+   font-weight: 400;
  }
  
  .headerMenu a {
@@ -53,7 +57,7 @@ h1 p{
  }
  
  .headerMenu a:hover {
-   /*background: #4209df;*/
+   border-radius: 15px;
    background: rgb(199,100,223);
    background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
 
@@ -61,6 +65,7 @@ h1 p{
  
  body{
     background-color: black;
+    color: white;
  }
 
  .container img{
@@ -82,13 +87,12 @@ h1 p{
  }
 
  footer ul{
-  margin: auto;
+  margin: 10px;
   padding: 5px;
   display: flex;
   flex-flow: row;
   justify-content: center;
   list-style: none;
-  /*background-color: #4209df;*/
   background: rgb(199,100,223);
   background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
 
@@ -98,11 +102,10 @@ h1 p{
   justify-items: center;
  }
 
- .contact{
-   margin: 30px;
-   padding: 30px;
-   text-align: center;
-   background-image: url(../images/fondoT.jpg) ;
+ .center{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
  }
  .band p{
   display: flex;
@@ -116,11 +119,6 @@ h1 p{
  color: white;
 }
 
-.news p{
-  display: flex;
-  justify-content: center;
-  color: white;
- }
 
  /* Grilla NEWS*/
 
@@ -128,6 +126,9 @@ h1 p{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  color: white;
   grid-template-areas: 
   "img1 text1"
   "img2 text2";
@@ -136,9 +137,6 @@ h1 p{
   grid-area: img1;
  }
  .text1{
-  text-align: center;
-  align-content: center;
-  color: white;
   grid-area: text1;
  }
  .img2{
@@ -146,10 +144,9 @@ h1 p{
  }
  .text2{
   grid-area: text2;
-  color: white;
  }
 
-
+/* Index Resposive*/
  @media screen and (max-width: 1024px) {
     .container{
       flex-direction: column; 
@@ -165,11 +162,40 @@ h1 p{
   .container{
     flex-direction: column; 
     width: 100%;
-
   }
   .indexImg{
     width: 80%;
     height: 80%;
   }
+  .headerMenu a {
+    font-size: 12px;
+  }
+}
+/* Fin index resposive*/
 
+@media screen and (max-width: 768px) {
+  .grilla{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: 
+    "img1"
+    "text1"
+    "img2"
+    "text2";
+    width: 100%;
+    font-size: 65%;
+  }
+  .headerMenu a {
+    font-size: 12px;
+  }
+}
+.colorB{
+  background-color: blueviolet;
+  color: white;
+}
+.buttonCenter{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
 }
