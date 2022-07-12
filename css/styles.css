@@ -86,6 +86,7 @@
   color: white;
  }
 
+/*-----FOOTER----*/
  footer ul{
   margin: 10px;
   padding: 5px;
@@ -101,6 +102,7 @@
   display: flex;
   justify-items: center;
  }
+ /*----------------*/
 
  .center{
   display: flex;
@@ -124,9 +126,10 @@
 
  .grilla{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.65fr 1fr;
   grid-template-rows: 1fr 1fr;
-  align-items: center;
+  align-items:center;
+  justify-content: space-evenly;
   text-align: center;
   color: white;
   grid-template-areas: 
@@ -138,12 +141,16 @@
  }
  .text1{
   grid-area: text1;
+  text-align: left;
+  max-width: 80%;
  }
  .img2{
   grid-area: img2;
  }
  .text2{
   grid-area: text2;
+  text-align: left;
+  max-width: 80%;
  }
 
 /* Index Resposive*/
@@ -173,6 +180,7 @@
 }
 /* Fin index resposive*/
 
+/*-----News Responsive----*/
 @media screen and (max-width: 768px) {
   .grilla{
     grid-template-columns: 1fr;
@@ -190,6 +198,9 @@
     font-size: 12px;
   }
 }
+/*------------------------------*/
+
+/*---Color y posisicion de botones contactos----*/
 .colorB{
   background-color: blueviolet;
   color: white;
@@ -198,4 +209,118 @@
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
+}
+/*----------------------------------------*/
+
+
+/*-------GRILLA Banda-------------------*/
+.containerBand{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+  text-align: center;
+  color: white;
+  grid-template-areas: 
+  "imgAmy textAmy"
+  "textTim imgTim"
+  "imgWill textWill"
+  "textTroy imgTroy"
+  "imgEmma textEmma";
+}
+.imgAmy{
+  grid-area: imgAmy;
+}
+.textAmy{
+  grid-area: textAmy;
+  text-align: left;
+  max-width: 80%;
+}
+.imgTim{
+  grid-area: imgTim;
+}
+.textTim{
+  grid-area: textTim;
+  text-align: right;
+  max-width: 80%;
+}
+.imgWill{
+  grid-area: imgWill;
+}
+.textWill{
+  grid-area: textWill;
+  text-align: left;
+  max-width: 80%;
+}
+.imgTroy{
+  grid-area: imgTroy;
+}
+.textTroy{
+  grid-area: textTroy;
+  text-align: right;
+  max-width: 80%;
+}
+.imgEmma{
+  grid-area: imgEmma;
+}
+.textEmma{
+  grid-area: textEmma;
+  text-align: left;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .containerBand{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 0.70fr);
+    color: white;
+    justify-self: center;
+    grid-template-areas: 
+    "imgAmy" 
+    "textAmy"
+    "imgTim"
+    "textTim" 
+    "imgWill"
+    "textWill" 
+    "imgTroy"
+    "textTroy"
+    "imgEmma"
+    "textEmma";
+  }
+  .textAmy{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  .textTim{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  .textWill{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  .textTroy{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  .textEmma{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
+  
+}
+
+
+
+
+.foot{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
