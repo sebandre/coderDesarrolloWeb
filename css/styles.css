@@ -66,6 +66,9 @@
  body{
     background-color: black;
     color: white;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
  }
 
  .container img{
@@ -96,7 +99,6 @@
   list-style: none;
   background: rgb(199,100,223);
   background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
-
  }
  footer li{
   display: flex;
@@ -109,11 +111,11 @@
   flex-flow: column;
   align-items: center;
  }
- .band p{
+ /*.band p{
   display: flex;
   justify-content: center;
   color: white;
- }
+ }*/
 
 .albums p{
  display: flex;
