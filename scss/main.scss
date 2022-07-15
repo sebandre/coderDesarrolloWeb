@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "evanescent";
+    src: url(../fonts/evanescent.ttf);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+
+.banner{
+    text-align: center; 
+    color: white;
+    font-size: 50px;
+    font-family: evanescent;
+    font-weight: 700;
+    p{
+        display: inline-block;
+        animation: animate 1s linear forwards;
+    }
+}
+
+@keyframes animate {
+    0%
+    {
+      opacity: 0;
+      transform: rotateY(90deg);
+      filter: blur(100px);
+    }
+    100%
+    {
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter: blur(0);
+    }
+}
+
+/*---HEADER----*/
+.headerMenu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0; 
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+    a {
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: white;
+    }
+    a:hover {
+        border-radius: 15px;
+        background: rgb(199,100,223);
+        background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
+     
+    }
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container{
+    img{
+        display: flex;
+        margin: auto;
+    }
+    ul{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        list-style: none;
+        color: white;
+    }
+    p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: white;
+    }
+}
+
+footer{
+    ul{
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        list-style: none;
+        background: rgb(199,100,223);
+        background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
+    }
+    li{
+        display: flex;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 1027px) {
+    .container{
+      flex-direction: column; 
+      width: 100%;
+    }
+    .indexImg{
+      width: 80%;
+      height: 80%;
+    }
+ }
+ @media screen and (max-width: 768px) {
+  .container{
+    flex-direction: column; 
+    width: 100%;
+  }
+  .indexImg{
+    width: 70%;
+    height: 70%;
+  }
+  .headerMenu a {
+    font-size: 12px;
+  }
+}
