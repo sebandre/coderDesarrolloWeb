@@ -7,14 +7,13 @@
   padding: 0; }
 
 .banner {
+  animation: animate 1s linear forwards;
   text-align: center;
+  letter-spacing: 10PX;
   color: white;
   font-size: 50px;
   font-family: evanescent;
   font-weight: 700; }
-  .banner p {
-    display: inline-block;
-    animation: animate 1s linear forwards; }
 
 @keyframes animate {
   0% {
