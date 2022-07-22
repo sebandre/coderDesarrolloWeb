@@ -57,7 +57,6 @@
         border-radius: 15px;
         background: rgb(199,100,223);
         background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
-     
     }
 }
 
@@ -128,4 +127,23 @@ footer{
   .headerMenu a {
     font-size: 12px;
   }
+}
+/*EXTEND*/
+.headerMenuBootstrap{
+  @extend .headerMenu;
+  a:hover {
+    border-radius: 16px;
+    background: rgb(108, 100, 223);
+    background: linear-gradient(90deg, rgba(108,100,223,1) 0%, rgb(10, 30, 218) 44%, rgb(4, 0, 255) 100%);
+  }
+}
+
+
+/*Mixin imagenes de pagina banda*/
+@mixin imagenes($width, $height) {
+    height: $height;
+    width: $width;  
+}
+.imgBand{
+    @include imagenes(400px,350px)
 }

@@ -26,7 +26,7 @@
     filter: blur(0); } }
 
 /*---HEADER----*/
-.headerMenu {
+.headerMenu, .headerMenuBootstrap {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -36,12 +36,12 @@
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   font-weight: 400; }
-  .headerMenu a {
+  .headerMenu a, .headerMenuBootstrap a {
     text-decoration: none;
     display: block;
     padding: 1em;
     color: white; }
-  .headerMenu a:hover {
+  .headerMenu a:hover, .headerMenuBootstrap a:hover {
     border-radius: 15px;
     background: #c764df;
     background: linear-gradient(90deg, #c764df 0%, #7f26ba 44%, #6a00ff 100%); }
@@ -99,5 +99,16 @@ footer li {
   .indexImg {
     width: 70%;
     height: 70%; }
-  .headerMenu a {
+  .headerMenu a, .headerMenuBootstrap a {
     font-size: 12px; } }
+
+/*EXTEND*/
+.headerMenuBootstrap a:hover {
+  border-radius: 16px;
+  background: #6c64df;
+  background: linear-gradient(90deg, #6c64df 0%, #0a1eda 44%, #0400ff 100%); }
+
+/*Mixin imagenes de pagina banda*/
+.imgBand {
+  height: 350px;
+  width: 400px; }
