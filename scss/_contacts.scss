@@ -1,0 +1,20 @@
+/*---Color y posisicion de botones----*/
+.colorB{
+    background-color: #7A0BC0;
+    color: white;
+}
+.buttonCenter{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.center{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}

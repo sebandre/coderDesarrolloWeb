@@ -1,0 +1,18 @@
+.container{
+    img{
+        display: flex;
+        margin: auto;
+        padding: 4px;
+    }
+    ul{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        list-style: none;
+    }
+    p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,17 @@
+footer{
+    ul{
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        list-style: none;
+        background: rgb(113,92,161);
+        background: linear-gradient(90deg, rgba(113,92,161,1) 0%, rgba(86,50,171,1) 44%, rgba(39,0,130,1) 100%);
+    }
+    li{
+        display: flex;
+        justify-items: center;
+    }
+}
+

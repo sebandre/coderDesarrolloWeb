@@ -1,0 +1,97 @@
+.containerBand{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    text-align: center;
+    grid-template-areas: 
+    "imgAmy textAmy"
+    "textTim imgTim"
+    "imgWill textWill"
+    "textTroy imgTroy"
+    "imgEmma textEmma";
+  }
+  .imgAmy{
+    grid-area: imgAmy;
+  }
+  .textAmy{
+    grid-area: textAmy;
+    text-align: left;
+    max-width: 80%;
+    margin: 3px;
+    padding: 3px;
+    border: 3px #7A0BC0 solid;
+    border-radius: 10px;
+  }
+  .imgTim{
+    grid-area: imgTim;
+  }
+  .textTim{
+    grid-area: textTim;
+    text-align: right;
+    justify-self: right;
+    max-width: 80%;
+    margin: 3px;
+    padding: 3px;
+    border: 3px #7A0BC0 solid;
+    border-radius: 10px;
+  }
+  .imgWill{
+    grid-area: imgWill;
+  }
+  .textWill{
+    grid-area: textWill;
+    text-align: left;
+    max-width: 80%;
+    margin: 3px;
+    padding: 3px;
+    border: 3px #7A0BC0 solid;
+    border-radius: 10px;
+  }
+  .imgTroy{
+    grid-area: imgTroy;
+  }
+  .textTroy{
+    grid-area: textTroy;
+    text-align: right;
+    justify-self: right;
+    max-width: 80%;
+    margin: 3px;
+    padding: 3px;
+    border: 3px #7A0BC0 solid;
+    border-radius: 10px;
+  }
+  .imgEmma{
+    grid-area: imgEmma;
+  }
+  .textEmma{
+    grid-area: textEmma;
+    text-align: left;
+    max-width: 80%;
+    margin: 3px;
+    padding: 3px;
+    border: 3px #7A0BC0 solid;
+    border-radius: 10px;
+  }
+
+  /*-----ESTILO IMAGENES------*/
+  @mixin imagenes($width, $height, $border, $color, $style, $pad) {
+    height: $height;
+    width: $width;  
+    border-radius: $border;
+    border-color: $color;
+    border-style: $style;
+    margin: $pad;
+}
+.imgBand{
+    @include imagenes(400px,350px,10px,#7A0BC0,ridge,3px)
+}
+.imgBand:hover{
+  transition: 1s;
+  transform: scale(1.05);
+}
+.imgBand:not(:hover){
+  transition: 1s;
+  transform: scale(1);
+}
+

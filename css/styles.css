@@ -1,75 +1,12 @@
-@font-face {
-  font-family: "evanescent";
-  src: url(../fonts/evanescent.ttf);
-}
 
-*{
-	margin: 0;
-	padding: 0;
-}
 
-.banner{
-   text-align: center; 
-   color: white;
-   font-size: 50px;
-   font-family: evanescent;
-   font-weight: 700;
-}
-.banner p{
-  display: inline-block;
-  animation: animate 1s linear forwards;
-}
 
-@keyframes animate {
-  0%
-  {
-    opacity: 0;
-    transform: rotateY(90deg);
-    filter: blur(100px);
-  }
-  100%
-  {
-    opacity: 1;
-    transform: rotateY(0deg);
-    filter: blur(0);
-  }
 
-}
 
-/*---HEADER----*/
- .headerMenu{
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: center;
-   list-style: none;
-   margin: 0; 
-   background: black;
-   font-family: 'Times New Roman', Times, serif;
-   font-size: 16px;
-   font-weight: 400;
- }
+
+
  
- .headerMenu a {
-   text-decoration: none;
-   display: block;
-   padding: 1em;
-   color: white;
- }
- 
- .headerMenu a:hover {
-   border-radius: 15px;
-   background: rgb(199,100,223);
-   background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
 
- }
- 
- body{
-    background-color: black;
-    color: white;
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
- }
 
  .container img{
     display: flex;
@@ -89,241 +26,30 @@
   color: white;
  }
 
-/*-----FOOTER----*/
- footer ul{
-  margin: 10px;
-  padding: 5px;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  list-style: none;
-  background: rgb(199,100,223);
-  background: linear-gradient(90deg, rgba(199,100,223,1) 0%, rgba(127,38,186,1) 44%, rgba(106,0,255,1) 100%);
- }
- footer li{
-  display: flex;
-  justify-items: center;
- }
+
  /*----------------*/
 
- .center{
-  display: flex;
-  flex-flow: column;
-  align-items: center;
- }
+
  /*.band p{
   display: flex;
   justify-content: center;
   color: white;
  }*/
 
-.albums p{
- display: flex;
- justify-content: center;
- color: white;
-}
 
 
  /* Grilla NEWS*/
 
- .grilla{
-  display: grid;
-  grid-template-columns: 0.65fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  align-items:center;
-  justify-content: space-evenly;
-  text-align: center;
-  color: white;
-  grid-template-areas: 
-  "img1 text1"
-  "img2 text2";
- }
- .img1{
-  grid-area: img1;
- }
- .text1{
-  grid-area: text1;
-  text-align: left;
-  max-width: 80%;
- }
- .img2{
-  grid-area: img2;
- }
- .text2{
-  grid-area: text2;
-  text-align: left;
-  max-width: 80%;
- }
 
-/* Index Resposive*/
- @media screen and (max-width: 1024px) {
-    .container{
-      flex-direction: column; 
-      width: 100%;
 
-    }
-    .indexImg{
-      width: 90%;
-      height: 90%;
-    }
- }
- @media screen and (max-width: 768px) {
-  .container{
-    flex-direction: column; 
-    width: 100%;
-  }
-  .indexImg{
-    width: 80%;
-    height: 80%;
-  }
-  .headerMenu a {
-    font-size: 12px;
-  }
-}
-/* Fin index resposive*/
 
-/*-----News Responsive----*/
-@media screen and (max-width: 768px) {
-  .grilla{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    grid-template-areas: 
-    "img1"
-    "text1"
-    "img2"
-    "text2";
-    width: 100%;
-    font-size: 65%;
-  }
-  .headerMenu a {
-    font-size: 12px;
-  }
-}
+
+
 /*------------------------------*/
 
-/*---Color y posisicion de botones contactos----*/
-.colorB{
-  background-color: blueviolet;
-  color: white;
-}
-.buttonCenter{
+
+.albums p{
   display: flex;
-  flex-flow: row;
-  justify-content: space-evenly;
-}
-/*----------------------------------------*/
-
-
-/*-------GRILLA Banda-------------------*/
-.containerBand{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  align-items: center;
-  text-align: center;
+  justify-content: center;
   color: white;
-  grid-template-areas: 
-  "imgAmy textAmy"
-  "textTim imgTim"
-  "imgWill textWill"
-  "textTroy imgTroy"
-  "imgEmma textEmma";
-}
-.imgAmy{
-  grid-area: imgAmy;
-}
-.textAmy{
-  grid-area: textAmy;
-  text-align: left;
-  max-width: 80%;
-}
-.imgTim{
-  grid-area: imgTim;
-}
-.textTim{
-  grid-area: textTim;
-  text-align: right;
-  max-width: 80%;
-}
-.imgWill{
-  grid-area: imgWill;
-}
-.textWill{
-  grid-area: textWill;
-  text-align: left;
-  max-width: 80%;
-}
-.imgTroy{
-  grid-area: imgTroy;
-}
-.textTroy{
-  grid-area: textTroy;
-  text-align: right;
-  max-width: 80%;
-}
-.imgEmma{
-  grid-area: imgEmma;
-}
-.textEmma{
-  grid-area: textEmma;
-  text-align: left;
-  max-width: 80%;
-}
-
-@media screen and (max-width: 768px) {
-  .containerBand{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 0.70fr);
-    color: white;
-    justify-self: center;
-    grid-template-areas: 
-    "imgAmy" 
-    "textAmy"
-    "imgTim"
-    "textTim" 
-    "imgWill"
-    "textWill" 
-    "imgTroy"
-    "textTroy"
-    "imgEmma"
-    "textEmma";
-  }
-  .textAmy{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-  }
-  .textTim{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-  }
-  .textWill{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-  }
-  .textTroy{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-  }
-  .textEmma{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-  }
-  
-}
-
-
-
-
-.foot{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
+ }

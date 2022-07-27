@@ -1,0 +1,40 @@
+.grilla{
+    display: grid;
+    grid-template-columns: 0.65fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items:center;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    grid-template-areas: 
+    "img1 text1"
+    "img2 text2";
+   }
+   .img1{
+    grid-area: img1;
+   }
+   .text1{
+    grid-area: text1;
+    text-align: left;
+    max-width: 80%;
+   }
+   .img2{
+    grid-area: img2;
+   }
+   .text2{
+    grid-area: text2;
+    text-align: left;
+    max-width: 80%;
+   }
+   .imgNews{
+    border: 3px #7A0BC0 solid;
+    margin: 2px;
+   }
+   .imgNews:hover{
+    transition: 1s;
+    transform: scale(1.05);
+  }
+  .imgNews:not(:hover){
+    transition: 1s;
+    transform: scale(1);
+  }

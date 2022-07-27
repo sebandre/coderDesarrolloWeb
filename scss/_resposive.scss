@@ -1,0 +1,98 @@
+/*------INDEX-------*/
+@media screen and (max-width: 1027px) {
+    .container{
+      flex-direction: column; 
+      width: 100%;
+    }
+    .indexImg{
+      width: 80%;
+      height: 80%;
+    }
+ }
+ @media screen and (max-width: 768px) {
+  .container{
+    flex-direction: column; 
+    width: 100%;
+  }
+  .indexImg{
+    width: 70%;
+    height: 60%;
+  }
+  .headerMenu a {
+    font-size: 12px;
+  }
+  .music{
+    width: 320px;
+    height: 280px;
+  }
+}
+/*-----BAND-------*/
+@media screen and (max-width: 768px) {
+    .containerBand{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(10, 0.70fr);
+      color: white;
+      justify-self: center;
+      grid-template-areas: 
+      "imgAmy" 
+      "textAmy"
+      "imgTim"
+      "textTim" 
+      "imgWill"
+      "textWill" 
+      "imgTroy"
+      "textTroy"
+      "imgEmma"
+      "textEmma";
+    }
+    .textAmy{
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
+    .textTim{
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
+    .textWill{
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
+    .textTroy{
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
+    .textEmma{
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+    }
+}
+/*-----NEWS----*/
+@media screen and (max-width: 768px) {
+    .grilla{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      grid-template-areas: 
+      "img1"
+      "text1"
+      "img2"
+      "text2";
+      width: 100%;
+      font-size: 65%;
+    }
+    .headerMenu a {
+      font-size: 12px;
+    }
+}
+
+/*--------ALBUM----------*/
+@media screen and (max-width: 500px){
+    
+}
+  
