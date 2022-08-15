@@ -178,6 +178,10 @@ footer li {
   transition: 1s;
   transform: scale(1); }
 
+span {
+  text-decoration-style: solid;
+  text-decoration: underline; }
+
 /*---------NEWS--------*/
 .grilla {
   display: grid;
