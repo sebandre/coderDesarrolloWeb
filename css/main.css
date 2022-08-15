@@ -4,7 +4,7 @@
   src: url(../fonts/evanescent.ttf); }
 
 * {
-  margin: 0;
+  margin: 1;
   padding: 0; }
 
 body {
@@ -207,7 +207,9 @@ footer li {
 
 .imgNews {
   border: 3px #7A0BC0 solid;
-  margin: 2px; }
+  margin: 2px;
+  width: 400px;
+  height: 209px; }
 
 .imgNews:hover {
   transition: 1s;
@@ -216,6 +218,9 @@ footer li {
 .imgNews:not(:hover) {
   transition: 1s;
   transform: scale(1); }
+
+.newsText {
+  font-size: 23px; }
 
 /*------CONTACTS------*/
 /*---Color y posisicion de botones----*/
@@ -303,4 +308,31 @@ footer li {
   .headerMenu a {
     font-size: 12px; } }
 
+@media screen and (max-width: 430px) {
+  .imgNews {
+    width: 90%; }
+  .imgBand {
+    width: 90%; } }
+
+@media screen and (max-width: 320px) {
+  .imgNews {
+    width: 80%; }
+  .imgBand {
+    width: 80%; } }
+
 /*--------ALBUM----------*/
+@media screen and (max-width: 340px) {
+  .indexImg {
+    height: 35%; }
+  body {
+    background-size: 340px 100%; } }
+
+@media screen and (max-width: 340px) and (max-width: 350px) {
+  .hide {
+    display: none; } }
+
+/*-------ALBUM-------*/
+.albumText {
+  width: 50%;
+  margin: auto;
+  text-align: center; }

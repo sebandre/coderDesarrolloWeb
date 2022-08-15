@@ -90,9 +90,38 @@
       font-size: 12px;
     }
 }
+@media screen and (max-width: 430px){
+    .imgNews{
+      width: 90%;
+    }
+    .imgBand{
+      width: 90%;
+    }
+}
+@media screen and (max-width: 320px){
+  .imgNews{
+    width: 80%;
+  }
+  .imgBand{
+    width: 80%;
+  }
+}
 
 /*--------ALBUM----------*/
 @media screen and (max-width: 500px){
     
 }
-  
+
+@media screen and (max-width: 340px){
+  .indexImg{
+    height: 35%;
+  }
+  body{
+    background-size: 340px 100%;
+  }
+  @media screen and (max-width: 350px){
+  .hide{
+    display:none;
+  }
+}
+}

@@ -29,6 +29,8 @@
    .imgNews{
     border: 3px #7A0BC0 solid;
     margin: 2px;
+    width: 400px;
+    height: 209px;
    }
    .imgNews:hover{
     transition: 1s;
@@ -37,4 +39,7 @@
   .imgNews:not(:hover){
     transition: 1s;
     transform: scale(1);
+  }
+  .newsText{
+    font-size: 23px;
   }
