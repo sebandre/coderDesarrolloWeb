@@ -83,7 +83,8 @@ footer li {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  list-style: none; }
+  list-style: none;
+  margin: auto; }
 
 .container p {
   display: flex;
