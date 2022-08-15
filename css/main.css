@@ -286,7 +286,8 @@ span {
   .textTim {
     display: flex;
     flex-direction: column;
-    justify-self: center; }
+    justify-self: center;
+    text-align: left; }
   .textWill {
     display: flex;
     flex-direction: column;
@@ -294,11 +295,19 @@ span {
   .textTroy {
     display: flex;
     flex-direction: column;
-    justify-self: center; }
+    justify-self: center;
+    text-align: left; }
   .textEmma {
     display: flex;
     flex-direction: column;
-    justify-self: center; } }
+    justify-self: center; }
+  /*-----FOOTER--------*/
+  .social {
+    width: 80%;
+    height: 90%; }
+  footer ul {
+    margin: 10px;
+    padding: 3px; } }
 
 /*-----NEWS----*/
 @media screen and (max-width: 768px) {
