@@ -79,12 +79,6 @@ footer li {
   margin: auto;
   padding: 4px; }
 
-.container ul {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  list-style: none; }
-
 .container p {
   display: flex;
   text-align: center;
@@ -282,7 +276,8 @@ span {
   .textAmy {
     display: flex;
     flex-direction: column;
-    justify-self: center; }
+    justify-self: center;
+    margin: 20px; }
   .textTim {
     display: flex;
     flex-direction: column;
@@ -291,12 +286,14 @@ span {
   .textWill {
     display: flex;
     flex-direction: column;
-    justify-self: center; }
+    justify-self: center;
+    margin: 20px; }
   .textTroy {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    text-align: left; }
+    text-align: left;
+    margin: 3px; }
   .textEmma {
     display: flex;
     flex-direction: column;
